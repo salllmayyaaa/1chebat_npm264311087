@@ -1,0 +1,10 @@
+CREATE TABLE area_parkir_yaya (
+    id_area INT AUTO_INCREMENT PRIMARY KEY,
+    nama_area VARCHAR(50) NOT NULL,
+    status_area ENUM('tersedia', 'tidak tersedia') DEFAULT 'tersedia'
+);
+
+INSERT INTO area_parkir_yaya (nama_area, status_area) VALUES
+('Area Utara', 'tersedia'),
+('Area Barat', 'tersedia'),
+('Area Selatan', 'tidak tersedia');
